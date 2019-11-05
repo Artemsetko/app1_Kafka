@@ -30,10 +30,12 @@ public class CustomObject {
     }
 
     @Override
-    public String toString() {
-        return "CustomObject{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                '}';
+    public String toString()
+    {
+        return "CustomObject [name="
+                + name
+                + ", age="
+                + age
+                + "]";
     }
 }

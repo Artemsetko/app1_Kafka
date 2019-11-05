@@ -39,6 +39,12 @@ public class KafkaService {
 
 
     public void send(CustomObject res) {
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println("kafka: " + res);
         kafkaProducer.send(new ProducerRecord<>("msg",  res));
 
     }
