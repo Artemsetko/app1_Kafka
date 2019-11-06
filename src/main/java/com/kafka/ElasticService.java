@@ -17,7 +17,7 @@ public class ElasticService {
 
 
     public void send(String res) {
-        IndexRequest request = new IndexRequest("posts");
+        IndexRequest request = new IndexRequest("test");
         request.id(String.valueOf(i++));
         request.source(res, XContentType.JSON);
         RestHighLevelClient client = new RestHighLevelClient(
